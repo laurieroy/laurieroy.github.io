@@ -48,14 +48,16 @@ copy
 			<!--	<div class="navbar-nav ml-auto p-2" >  mr-auto mt-2 mt-md-0 -->
 
 					<div class="nav-item active ml-auto  p-2">
-						<a class="nav-item nav-link text-info" href="https://www.linkedin.com/in/laurette-roy-131971139/" target="_blank"><i class="fa fa-linkedin"></i></a> <!--change color scheme -->
+						<a class="nav-item nav-link text-info" href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i class="fa fa-linkedin"></i></a> <!--change color scheme -->
 					</div>
-					<div><button class="btn btn-outline-success ml-auto p-2 my-2 my-sm-0" type="submit">Download Resume(PDF)</button></div>	 <!--downloadable CV TBD-->
+					<div><button class="btn btn-outline-success ml-auto p-2 my-2 my-sm-0" type="submit" data-toggle="tooltip"> 
+					<a data-content="Right-click to open in new tab" rel="popover" data-placement="bottom" data-trigger="hover" 
+					href="./files/LRoy_Resume.pdf" download target="_blank"> Download Resume(PDF)</button></a></div>	 <!--downloadable CV popover TBD-->
 					<div class="nav-item active ml-auto  p-2">
 						<a class="nav-item nav-link text-info" href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github"></i></a>
 					</div>
 			  </div>
-
+       
 
 </nav>
 		<!-- /jumbotron -->
@@ -138,7 +140,7 @@ copy
 							<div class="card-block">
 								<h4 class="card-title">python</h4>
 									<span class="badge badge-pill badge-info">python3</span>
-									<span class="badge badge-pill badge-info">numPy</span>
+							<!--		<span class="badge badge-pill badge-info">numPy</span>
 								<!--	<span class="badge badge-pill badge-info">TBD SciPy</span>						TBD -->
 							</div>
 					</div>
@@ -148,7 +150,7 @@ copy
 								<h4 class="card-title">database</h4>
 									<span class="badge badge-pill badge-info">SQL server</span>
 									<span class="badge badge-pill badge-info">mySQL</span>
-								<!--	<span class="badge badge-pill badge-info">T	BD</span>						TBD -->
+									<span class="badge badge-pill badge-info">SQLite3</span>
 							</div>
 					</div>
 					<div class="card bg-success text-black">
@@ -251,7 +253,7 @@ copy
 								document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
 							</script>
 					</div>
-					<div><a href="http://www.linkedin.com/in/laurette-roy-131971139/" target="_blank"><i class="fa fa-linkedin"></i></a>  </div>
+					<div><a href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i color = black class="fa fa-linkedin"></i></a>  </div>
 					<div><a href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github"></i></a>   </div>
 
 		</div>
@@ -262,6 +264,7 @@ copy
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
+$('#popoverOption').popover({ trigger: "hover" });
 </script>
 
 	<!-- /main content -->
