@@ -4,3 +4,7 @@ h1	{
 	font-weight: 900;
 /*	text-transform: uppercase;*/
 } 
+
+body {
+	padding-top: 70px;
+}
