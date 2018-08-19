@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Bootstrap 4 CSS updated 8/2018-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Other CSS -->
 	<link rel="stylesheet" href="./css/styles.css">
   </head>
@@ -16,49 +16,45 @@
   <body id="home" style=" ">
   <!-- copied need to personalize, grab photos  bg was #9aa6b1   -->
   <!-- Page Content -->
-	<div class="container-fluid "> 
+	<div class="container-fluid"> 
 		<!-- navigation -->
-		<!-- collapsable navbar, fixed at the top grr. no longing collapsing. fix.-->
-		<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse text=white">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<!-- collapsable navbar, fixed at the top grr. no longing collapsing. navbar-inverse bg-inverse text=whitefix. -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		 <!--if have logo <a class="navbar-brand" href="#">Navbar</a>		/logo-->
-			<div class="collapse navbar-collapse d-flex flex-row justify-content-start" id="navbarNavAltMarkup">
+			<div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
 			<!--	<div class="navbar-nav  "> ml-auto mt-2 mt-md-0> added this in instead of just div class   from 51 </div> -->
-					<div class="nav-item active p-2">
-						<a class="nav-item nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
-					</div>
-					<div class="nav-item active p-2">
-						  <a class="nav-item nav-link text-danger" href="#projects">Projects</a>
-					</div>
-					<div class="nav-item active p-2">
-						  <a class="nav-item nav-link text-success" href="#skills">Skills</a>
-					</div>
-					<div class="nav-item active p-2">
-						  <a class="nav-item nav-link text-info" href="#about">About</a>
-					</div>
-				<!-- Add button to download pdf cv, icons for github and linked in, right justified -->
-			<!--
-				</div>
-
-			<div class="d-flex flex-row justify-content-end">  -->
-			<!--	<div class="navbar-nav ml-auto p-2" >  mr-auto mt-2 mt-md-0 -->
-
-					<div class="nav-item active ml-auto  p-2">
-						<a class="nav-item nav-link text-info" href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i class="fa fa-linkedin"></i></a> <!--change color scheme -->
-					</div>
-					<div><button class="btn btn-outline-success ml-auto p-2 my-2 my-sm-0" type="submit" data-toggle="tooltip"> 
-					<a data-content="Right-click to open in new tab" rel="popover" data-placement="bottom" data-trigger="hover" 
-					href="./files/LRoy_Resume.pdf" download target="_blank"> Download Resume(PDF)</button></a></div>	 <!--downloadable CV popover TBD-->
-					<div class="nav-item active ml-auto  p-2">
-						<a class="nav-item nav-link text-info" href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github"></i></a>
-					</div>
-			  </div>
-       
-
-</nav>
-		<!-- /jumbotron removed jumbotron-fluid to roud corners. can add in css for text -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active p-2">
+						<a class="nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active p-2">
+						  <a class="nav-link text-danger" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item active p-2">
+						  <a class="nav-link text-success" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item active p-2">
+						  <a class="nav-link text-info" href="#about">About</a>
+					</li>
+				</ul>
+		  		<ul class="navbar-nav mr-auto  d-flex flex-row-reverse p-2">
+		  			<li class=" nav-item active">
+						<a class="nav-link text-info" href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i class="fa fa-linkedin"></i></a> <!--change color scheme -->
+					</li>
+					<li><button class="btn btn-outline-success ml-auto p-2 my-2 my-sm-0" type="submit" data-toggle="tooltip"> 
+						<a data-content="Right-click to open in new tab" rel="popover" data-placement="bottom" data-trigger="hover" 
+					href="./files/LRoy_Resume.pdf" download target="_blank"> Download Resume(PDF)</button></a>
+					</li>	 <!--downloadable CV popover TBD-->
+					<li>
+						<a class="nav-link text-info" href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github"></i></a>
+					</li>
+				</ul>
+		  	</div>
+		</nav>	
+		<!-- /jumbotron NOTE: removed jumbotron-fluid to roud corners. can add in css for text -->
 		<div class="jumbotron text-center bg-info st-4 hidden-md-down">
 			<div class="container ">
 				<h1 class="display-2">L a u r i e   R o y</h1>
@@ -70,7 +66,7 @@
 		<!-- main area -->
 		<div class="container col pt-5">		<!-- have all the way across or some type of organization -->
 			<div class="clearfix"></div>
-			<div class="row bg-inverse text-danger id=projects">
+			<div class="row bg-dark text-danger id=projects">
 				<h3>Projects:</h3>
 				<div class="col-md-4">
 				<div class="list-group">
@@ -149,38 +145,20 @@
 									<span class="badge badge-pill badge-info">SQL server</span>
 									<span class="badge badge-pill badge-info">mySQL</span>
 									<span class="badge badge-pill badge-info">SQLite3</span>
+									<span class="badge badge-pill badge-info">MongoDB</span>
 							</div>
 					</div>
 					<div class="card bg-success text-black">
 						<div class="card-block">
 							<h4 class="card-title">Other skills:</h4>
-								<span class="badge badge-pill badge-info">Version Control (GitHub)</span>
-								<span class="badge badge-pill badge-info">Project Management (TBD)</span>
+								<span class="badge badge-pill badge-info">Version Control (Git, GitHub)</span>
+								<span class="badge badge-pill badge-info">Project Management (Agile) </span>
 							<!-- Button trigger modal -->
 								<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong">
 								  Troubleshooting software & hardware issues
 								</button>
 
-								<!-- Modal -->
-								<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-								  <div class="modal-dialog" role="document">
-									<div class="modal-content">
-									  <div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLongTitle">Solving problems and data integrity are my passion!</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										  <span aria-hidden="true">&times;</span>
-										</button>
-									  </div>
-									  <div class="modal-body">
-										I tweak software and hardware to make them work with the existing structure as a sea-going research technician. I am transitioning these skills to being a software developer.
-									  </div>
-									  <div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-										<button type="button" class="btn btn-primary">Dowload PDF</button> 		<!--insert dowload function -->
-									  </div>
-									</div>
-								  </div>
-								</div>																			<!-- /modal -->
+																										
 							<!--<span class="badge badge-pill badge-info">TBD</span>
 								<span class="badge badge-pill badge-info">T	BD</span>						TBD -->
 						</div>
@@ -268,10 +246,14 @@ $('#popoverOption').popover({ trigger: "hover" });
 	<!-- /main content -->
 
 {# update this, copy from BS page #}
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. old-->{# 
+    // <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> #}
 
 
   </body>
