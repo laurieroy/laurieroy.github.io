@@ -8,3 +8,7 @@ h1	{
 body {
 	padding-top: 100px;
 }
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
