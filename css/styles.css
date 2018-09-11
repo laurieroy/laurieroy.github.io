@@ -12,3 +12,25 @@ body {
 .navbar-collapse {
 	justify-content: flex-end;
 }
+
+.text-skills {
+	color: #5b258e;
+}
+
+#skills {
+	background-color: #4682b4;
+}
+
+#skills .card {
+	background-color: #4682b4;
+	border: none;
+	/* #db7093; */
+	/* #5b258e; */
+}
+#skills .badge {
+	background-color: ;
+}
+
+#contact {
+	color: black;
+}

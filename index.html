@@ -22,7 +22,12 @@
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-		 <!--if have logo <a class="navbar-brand" href="#">Navbar</a>		/logo-->
+			<!-- code icon is now pay.
+			<a class="navbar-brand" href="#">
+				<i class="fas fa-code fa-2x"></i>
+			</a>	 	
+			<svg aria-hidden="true" data-prefix="fas" data-icon="code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-code fa-w-20 fa-9x"><path fill="currentColor" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z" class=""></path></svg> -->
+
 			<div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
 			<!--	<div class="navbar-nav  "> ml-auto mt-2 mt-md-0> added this in instead of just div class   from 51 </div> -->
 				<ul class="navbar-nav mr-auto">
@@ -33,7 +38,7 @@
 						  <a class="nav-link text-danger" href="#projects">Projects</a>
 					</li>
 					<li class="nav-item active p-2">
-						  <a class="nav-link text-success" href="#skills">Skills</a>
+						  <a class="nav-link text-secondary" href="#skills">Skills</a>   
 					</li>
 					<li class="nav-item active p-2">
 						  <a class="nav-link text-info" href="#about">About</a>
@@ -41,20 +46,20 @@
 				</ul>
 		  		<ul class="navbar-nav mr-auto  d-flex flex-row-reverse p-2">
 		  			<li class=" nav-item active">
-						<a class="nav-link text-info" href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i class="fa fa-linkedin"></i></a> <!--change color scheme -->
+						<a class="nav-link text-info" href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a> <!--change color scheme -->
 					</li>
 					<li><button class="btn btn-outline-success ml-auto p-2 my-2 my-sm-0" type="submit" data-toggle="tooltip"> 
 						<a data-content="Right-click to open in new tab" rel="popover" data-placement="bottom" data-trigger="hover" 
 					href="./files/LRoy_Resume.pdf" download target="_blank"> Download Resume(PDF)</button></a>
 					</li>	 <!--downloadable CV popover TBD-->
 					<li>
-						<a class="nav-link text-info" href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github"></i></a>
+						<a class="nav-link text-info" href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github fa-2x"></i></a>
 					</li>
 				</ul>
 		  	</div>
 		</nav>	
-		<!-- /jumbotron NOTE: removed jumbotron-fluid to roud corners. can add in css for text -->
-		<div class="jumbotron text-center bg-info st-4 hidden-md-down">
+		<!-- /jumbotron -->
+		<div class="jumbotron text-center bg-info st-4 d-none d-md-block">
 			<div class="container ">
 				</br></br>
 				<h1 class="display-2">L a u r i e   R o y</h1>
@@ -66,16 +71,21 @@
 		<!-- main area -->
 		<div class="container col pt-5">
 <!-- 		<div class="clearfix"></div>-->
-			<div class="row bg-dark text-danger id=projects p-4 rounded">
+			<div class="row bg-dark text-danger p-4 rounded" id="projects">
 				<h2>Projects:</h2>
 				 <p> Some sample projects completed while I was at the Tech Academy.</p>
 					<div class="list-group row"> 	<!-- combined row here, removed li		-->
 						<div class="col-md-4 px-2">
 						<!-- 	<div class="card mb-4 box-shadow"> -->
-							<img class="float-left rounded img-fluid" src="https://images.unsplash.com/photo-1505488387362-48bc38155987?ixlib=rb-0.3.5&s=a426e7f116c02a69e417090fff166ced&auto=format&fit=crop&w=1051&q=80" alt="unsplash image of library stack">
+							<img class="float-left rounded img-fluid" src="https://images.unsplash.com/photo-1505488387362-48bc38155987?ixlib=rb-0.3.5&s=a426e7f116c02a69e417090fff166ced&auto=format&fit=crop&w=1051&q=80" alt="unsplash photo of library stack, by: ">
 						</div>
 						<div class="col-md-8">
-							<p class="card-text">I was assigned....</p>
+							<p class="card-text">I was assigned.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
 									<button type="button" class="btn btn-sm btn-outline-secondary" 
@@ -167,153 +177,138 @@
 					</div>	
 				</div>
 				<!-- /new setup -->
-			<!--fix padding get better lineup at different breakpoints!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-		<div class="container col my-5 pt-5">
-			<div class="row card-group row justify-content-md-center no-gutters  id=skills">
+			</div>
+			<!--SKILLS SECTION no-gutters fix padding get better lineup at different breakpoints!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+		<div class="container col my-5 pt-5 text-white rounded" id="skills">
+			<div class="card-columns justify-content-md-center ">
+				<div class="row no-gutters justify-content-md-center"> 
 
-				<div class="row"></div> 	<!-- fix alignment -->
-					<div class="row justify-content-md-center no-gutters "> <!--when i put text info here, it doesn't apply to children. followup -->
-				<!--	<div class="card">
-			<!--	<img class="card-img-top" src="./images/.jpg" alt="web development skill"> -->
-						<div class="card-block bg-inverse text-white">
-							<h3 class="card-title"> Skills:</h3>
-						</div>
+					<div class="card">
+						<h3 class="card-title text-dark"> Skills:</h3>
 					</div>
-					<div class="card bg-success text-black">
-			<!--	<img class="card-img-top" src="./images/.jpg" alt="web development skill"> -->
-						<div class="card-block">
-							<h4 class="card-title">Web development</h4>
-							<span class="badge badge-pill badge-info">html5</span>
-							<span class="badge badge-pill badge-info">CSS3</span>
-							<span class="badge badge-pill badge-info">Bootstrap4</span>
-						</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Web development</h4>
+						<span class="badge badge-pill badge-secondary">html5</span>
+						<span class="badge badge-pill badge-secondary">CSS3</span>
+						<span class="badge badge-pill badge-secondary">Bootstrap4</span>
 					</div>
-					<div class="card bg-success text-black">
-					<!--	<img class="card-img-top" src="./images/JS.jpg" alt="Javascript skill">  -->
-							<div class="card-block">
-								<h4 class="card-title">JavaScript</h4>
-									<span class="badge badge-pill badge-info">jQuery</span>
-									<span class="badge badge-pill badge-info">AJAX</span>
-									<span class="badge badge-pill badge-info">node.js</span>						
-							</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">JavaScript</h4>
+							<span class="badge badge-pill badge-secondary">jQuery</span>
+							<span class="badge badge-pill badge-secondary">AJAX</span>
+							<span class="badge badge-pill badge-secondary">node.js</span>						
 					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">python</h4>
+							<span class="badge badge-pill badge-secondary">python3</span>
+					<!--		<span class="badge badge-pill badge-info">numPy</span>
+						<!--	<span class="badge badge-pill badge-info">TBD SciPy</span>						TBD -->
+					</div>
+				</div>
 
-					<div class="card bg-success text-black">
-				<!--		<img class="card-img-top" src="./images/c#.jpg" alt="c#"> -->
-						<div class="card-block">
-							<h4 class="card-title">c#</h4>
-							<span class="badge badge-pill badge-info">c# projects</span>
-<!--Add in link to projects page -->
-						</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">c#</h4>
+						<span class="badge badge-pill badge-secondary">c#</span>
+						<span class="badge badge-pill badge-secondary">ASP.NET</span>
+						<span class="badge badge-pill badge-secondary">MVC5</span>
+						<span class="badge badge-pill badge-secondary">Entity Framework</span>
 					</div>
+				</div>
 
-					<div class="card bg-success text-black">
-					<!--	<img class="card-img-top" src="./images/python.jpg" alt="python skill">  -->
-							<div class="card-block">
-								<h4 class="card-title">python</h4>
-									<span class="badge badge-pill badge-info">python3</span>
-									<!-- Add in link to projects -->
-							<!--		<span class="badge badge-pill badge-info">numPy</span>
-								<!--	<span class="badge badge-pill badge-info">TBD SciPy</span>						TBD -->
-							</div>
-					</div>
-					<div class="card bg-success text-black">
-					<!--	<img class="card-img-top" src="./images/database.jpg" alt="database skill"> -->
-							<div class="card-block">
-								<h4 class="card-title">database</h4>
-									<span class="badge badge-pill badge-info">SQL server</span>
-									<span class="badge badge-pill badge-info">mySQL</span>
-									<span class="badge badge-pill badge-info">SQLite3</span>
-									<span class="badge badge-pill badge-info">MongoDB</span>
-							</div>
-					</div>
-					<div class="card bg-success text-black">
-						<div class="card-block">
-							<h4 class="card-title">Other skills:</h4>
-								<span class="badge badge-pill badge-info">Version Control (Git, GitHub)</span>
-								<span class="badge badge-pill badge-info">Project Management (Agile) </span>
-	
-						</div>
-					</div>
-					<div class="card bg-success text-black">
 
-						<div class="card-block">
-							<h4 class="card-title">Other languages:</h4>
-								<span class="badge badge-pill badge-info">MATLAB</span>
-								<span class="badge badge-pill badge-info">C++</span>
-							<!--	<span class="badge badge-pill badge-info">TBD</span>
-								<span class="badge badge-pill badge-info">T	BD</span>						TBD -->
-						</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">database</h4>
+							<span class="badge badge-pill badge-secondary">SQL server</span>
+							<span class="badge badge-pill badge-secondary">mySQL</span>
+							<span class="badge badge-pill badge-secondary">SQLite3</span>
+							<span class="badge badge-pill badge-secondary">MongoDB</span>
+							<span class="badge badge-pill badge-secondary">postgreSQL</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Other skills:</h4>
+							<span class="badge badge-pill badge-secondary">Version Control (Git, GitHub)</span>
+							<span class="badge badge-pill badge-secondary">Project Management (Agile) </span>
+
 					</div>
 				</div>
 			</div>
+		</div> 		<!-- / skills -->
+
+	
+
+
+	<!-- about -->
+		<div class="container my-5" >
+			<div class="row">
+				<div class="col md-4 pt-5 bg-info rounded-left" id="about">
+				  <p><h3>Laurie Roy</h3></p>
+		<!--	  <img src="./images/Laurie_grotto.jpg" class="img-responsive img-circle rounded float-left" alt="Laurie Roy">   FIX SIZING -->
+				  <p>Software developer currently based out of Portland, OR. </p>
+				  <p>traveler. hiker. science nerd.</p>
+				</div>
+		<!--  current projects--> 
+				<div class="col md-4 bg-primary pt-5 rounded-right" >
+					<h3>What I'm working on now</h3>
+					<p>
+					<ul>
+						<li>Redux Udemy class</li>
+						<li>Testing in c#</li>
+						<li>APIs with python</li>
+						<li>Also playing around with the IoT</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<!-- / skills -->
+<!-- /current projs -->
+               	<!-- contact -->
 
-				<!-- about -->
-					<div class="container my-5" >
-						<div class="row">
-							<div class="col md-4 pt-5 bg-info rounded-left" id="about">
-							  <p><h3>Laurie Roy</h3></p>
-					<!--	  <img src="./images/Laurie_grotto.jpg" class="img-responsive img-circle rounded float-left" alt="Laurie Roy">   FIX SIZING -->
-							  <p>Software developer currently based out of Portland, OR. </p>
-							  <p>traveler. hiker. science nerd.</p>
-							</div>
-<!-- contact CHANGE OUT to current projects. Have contact info at top and bottom--> 
-							<div class="col md-4 bg-primary pt-5 rounded-right" >
-							<h3>What I'm working on now</h3>
-							<ul>
+               		
+			  
+	<footer class="footer text-center" id="contact">
+		<div class="d-flex flex-row justify-content-center">
+			<ul class="list-inline">
+				<li class="list-inline-item">
+					<a href="mailto: laurieroy.dev@gmail.com"><i class="fa fa-envelope fa-2x p-2" ></i></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a> 
+				</li>
+				<li class="list-inline-item">
+					<a href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github fa-2x"></i></a> 
+				</li>
+			</ul>
 
-								<li>Redux Udemy class</li>
-								<li>Testing in c#</li>
-								<li>APIs with python</li>
-								<li>Also playing around with the IoT</li>
+			<!--<div class="list-inline social-buttons p-2"> </div>  check spacing on this at diff breakpoints -->
+				<!--
+				<div class="p-2">&copy; 2018 <a href="https://github.com/laurieroy"><strong>Laurie Roy</strong></a> All Rights Reserved.</div>  
 
-						
-							</div>
-						</div>
-					</div>
-               	<!-- /contact -->
-		  
-<footer>
-	<div class="main clearfix">
-		<div class="d-flex flex-row justify-content-between">
-		<!--      <div class="col-md-4">
-						</div>
-					<div class="col-md-4"> see if flex does same thing
-					</div>
-						<!-- might need another div -->
-			<div class="p-2">&copy; 2017 <a href="https://github.com/laurieroy"><strong>Laurie Roy</strong></a> All Rights Reserved.</div>
 
-			<!--<div class="list-inline social-buttons p-2"> </div> -->
-					<div class="fa fa-envelope c-info p-2" >
-							<script language="JavaScript">
-								var username = "laurieroy.dev";
-								var hostname = "gmail.com";
-								var linktext = username + "@" + hostname ;
-								document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-							</script>
-					</div>
-					<div><a href="https://www.linkedin.com/in/laurie-roy/" target="_blank"><i class="fa fa-linkedin"></i></a>  </div>
-					<div><a href="http://www.github.com/laurieroy" target="_blank"><i class="fa fa-github"></i></a>   </div>
-
-		</div>
-	</dev>
-</footer>
-							<!-- /footer -->
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-$('#popoverOption').popover({ trigger: "hover" });
-</script>
+				<!-- /contact -->
+	</footer>
+								<!-- /footer -->
+	<script>
+	$(document).ready(function(){
+	    $('[data-toggle="tooltip"]').tooltip();
+	});
+	$('#popoverOption').popover({ trigger: "hover" });
+	</script>
 
 	<!-- /main content -->
 
-<!-- update this, copy from BS page  -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- update this, copy from BS page  -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. old
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -321,6 +316,6 @@ $('#popoverOption').popover({ trigger: "hover" });
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
 
 
-  </body>
+  	</body>
 
   </html>
