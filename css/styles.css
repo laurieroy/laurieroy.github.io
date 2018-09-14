@@ -13,9 +13,11 @@ body {
 	justify-content: flex-end;
 }
 
-.text-skills {
-	color: #5b258e;
+
+#projects .card {
+	color: black;
 }
+
 
 #skills {
 	background-color: #4682b4;
@@ -31,6 +33,14 @@ body {
 	background-color: ;
 }
 
+.text-skills {
+	color: #5b258e;
+}
+
 #contact {
 	color: black;
+}
+
+#about {
+	background-color: #FFFB00;
 }
