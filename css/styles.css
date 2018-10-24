@@ -13,6 +13,9 @@ body {
 	justify-content: flex-end;
 }
 
+.fa {
+	padding: .25;
+}
 
 #projects .card {
 	color: black;
