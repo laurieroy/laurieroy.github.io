@@ -3,7 +3,7 @@ h1	{
 /*	font-family: roboto; */
 	font-weight: 900;
 /*	text-transform: uppercase;*/
-} 
+}
 
 body {
 	padding-top: 100px;
@@ -16,7 +16,9 @@ body {
 .fa {
 	padding: .25;
 }
-
+.fa-cod {
+	color: 
+}
 #projects .card {
 	color: black;
 }
