@@ -14,10 +14,11 @@ body {
 }
 
 .fa {
-	padding: .25;
+	margin: 0 7px;
+	padding: 0 10px
 }
-.fa-cod {
-	color: 
+.fa-code {
+	color:
 }
 #projects .card {
 	color: black;
